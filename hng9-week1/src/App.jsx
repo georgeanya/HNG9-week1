@@ -28,7 +28,7 @@ function App() {
           </div>
         </div>
         <p className="text-center my-6 lg:mb-8 font-bold text-lg" id="twitter">
-          Annette Black
+          thegeorgeanya
         </p>
         <p className="hidden" id="slack">
           georgeanya4real
