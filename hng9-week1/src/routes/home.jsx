@@ -1,14 +1,16 @@
-import Footer from "./components/footer";
-import "./index.css";
-import img from "../src/assets/img.png";
-import share from "../src/assets/share.png";
-import slack from "../src/assets/slack.png";
-import share1 from "../src/assets/share1.png";
-import github from "../src/assets/github.png";
+import React from "react";
+import "../index.css";
+import img from "../assets/img.png";
+import share from "../assets/share.png";
+import slack from "../assets/slack.png";
+import share1 from "../assets/share1.png";
+import github from "../assets/github.png";
+import Footer from "../components/footer";
 
-function App() {
+
+const Home = () => {
   return (
-    <div className="">
+    <div>
       <div className="px-4 lg:px-36">
         <div className="relative mt-16">
           <div className="flex justify-end">
@@ -37,7 +39,7 @@ function App() {
           <a
             className="text-center py-6 border border-[#EAECF0] my-3 no-underline bg-[#EAECF0] rounded-lg text-sm font-medium  "
             href="https://twitter.com/thegeorgeanya"
-            id="twitter_link" 
+            id="twitter_link"
           >
             Twitter Link
           </a>
@@ -76,6 +78,13 @@ function App() {
           >
             Design Books
           </a>
+          <a
+            className="text-center py-6 border border-[#EAECF0] my-3 no-underline bg-[#EAECF0] rounded-lg text-sm font-medium  "
+            href="/contact"
+            id="book__design"
+          >
+            Contact Me
+          </a>
         </div>
         <div className="flex justify-center my-4">
           <img src={slack} alt="" className="mx-2" />
@@ -84,10 +93,10 @@ function App() {
       </div>
       <div className="px-4 lg:px-28">
         <hr className="mt-16" />
-        <Footer />
+        <Footer/>
       </div>
     </div>
   );
-}
+};
 
-export default App;
+export default Home;
