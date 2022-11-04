@@ -6,7 +6,7 @@ import slack from "../assets/slack.png";
 import share1 from "../assets/share1.png";
 import github from "../assets/github.png";
 import Footer from "../components/footer";
-
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -83,7 +83,7 @@ const Home = () => {
             href="/contact"
             id="book__design"
           >
-            Contact Me
+            <Link to="/contact">Contact Me</Link>
           </a>
         </div>
         <div className="flex justify-center my-4">
@@ -93,7 +93,7 @@ const Home = () => {
       </div>
       <div className="px-4 lg:px-28">
         <hr className="mt-16" />
-        <Footer/>
+        <Footer />
       </div>
     </div>
   );
