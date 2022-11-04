@@ -3,21 +3,16 @@ import ReactDOM from "react-dom/client";
 import Contact from "./routes/contact";
 import Home from "./routes/home";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home/>,
-  },
-  {
-    path: "/contact",
-    element: <Contact />,
-  },
-]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route  path="/contact" element={<Contact />} />
+      </Routes>
+    </BrowserRouter>
   </React.StrictMode>
 );
